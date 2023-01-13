@@ -1,0 +1,4 @@
+add_library(gecko_emdrv_tempdrv INTERFACE)
+target_sources(gecko_emdrv_tempdrv INTERFACE ${CMAKE_CURRENT_LIST_DIR}/src/tempdrv.c)
+target_include_directories(gecko_emdrv_tempdrv INTERFACE ${CMAKE_CURRENT_LIST_DIR}/inc)
+target_link_libraries(gecko_emdrv_tempdrv INTERFACE gecko_emdrv_common)
