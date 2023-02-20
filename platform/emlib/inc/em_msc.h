@@ -837,8 +837,10 @@ MSC_Status_TypeDef MSC_WriteWordFast(uint32_t *address,
  * @return
  *   Returns the status of the operation.
  ******************************************************************************/
+#ifdef INCLUDE_MSC_MASSERASE
 SL_RAMFUNC_DECLARATOR
 MSC_Status_TypeDef MSC_MassErase(void);
+#endif
 #endif
 
 #endif /* !SL_CATALOG_TZ_SECURE_KEY_LIBRARY_NS_PRESENT */

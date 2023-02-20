@@ -623,6 +623,7 @@ MSC_Status_TypeDef MSC_WriteWord(uint32_t *address,
 }
 MSC_RAMFUNC_DEFINITION_END
 
+#ifdef INCLUDE_MSC_MASSERASE
 MSC_RAMFUNC_DEFINITION_BEGIN
 MSC_Status_TypeDef MSC_MassErase(void)
 {
@@ -642,6 +643,7 @@ MSC_Status_TypeDef MSC_MassErase(void)
   return retVal;
 }
 MSC_RAMFUNC_DEFINITION_END
+#endif
 
 /***************************************************************************//**
  * @brief
