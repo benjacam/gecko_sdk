@@ -27,6 +27,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wconversion"
 
 #include "em_eusart.h"
 #if defined(EUART_PRESENT) || defined(EUSART_PRESENT)
@@ -1359,3 +1361,4 @@ __STATIC_INLINE void EUSART_Disable(EUSART_TypeDef *eusart)
 }
 
 #endif /* defined(EUART_PRESENT) || defined(EUSART_PRESENT) */
+// NOLINTEND

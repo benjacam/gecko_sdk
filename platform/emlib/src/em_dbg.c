@@ -27,6 +27,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
 
 #include "em_dbg.h"
 
@@ -212,3 +215,4 @@ void DBG_DisableDebugAccess(DBG_LockMode_TypeDef lockMode)
 
 /** @} (end addtogroup dbg) */
 #endif /* defined( CoreDebug_DHCSR_C_DEBUGEN_Msk ) */
+// NOLINTEND

@@ -27,6 +27,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wconversion"
 
 #include "sl_common.h"
 #include "em_gpcrc.h"
@@ -136,3 +138,4 @@ void GPCRC_Reset(GPCRC_TypeDef * gpcrc)
 /** @} (end addtogroup gpcrc) */
 
 #endif /* defined(GPCRC_COUNT) && (GPCRC_COUNT > 0) */
+// NOLINTEND

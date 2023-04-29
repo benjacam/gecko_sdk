@@ -27,6 +27,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wsign-conversion"
 
 #include "em_system.h"
 #include "sl_assert.h"
@@ -207,3 +209,4 @@ SYSTEM_SecurityCapability_TypeDef SYSTEM_GetSecurityCapability(void)
 }
 
 /** @} (end addtogroup system) */
+// NOLINTEND

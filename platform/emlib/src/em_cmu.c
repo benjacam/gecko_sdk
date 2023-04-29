@@ -27,6 +27,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wsign-conversion"
 #include "em_cmu.h"
 #if defined(CMU_PRESENT)
 
@@ -11375,3 +11377,4 @@ void CMU_USHFRCOBandSet(CMU_USHFRCOBand_TypeDef band)
 #endif // defined(_SILICON_LABS_32B_SERIES_2)
 /** @} (end addtogroup cmu) */
 #endif /* defined(CMU_PRESENT) */
+// NOLINTEND

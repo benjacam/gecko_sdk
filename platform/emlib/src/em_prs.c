@@ -27,6 +27,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
 
 #include "em_prs.h"
 #if defined(PRS_COUNT) && (PRS_COUNT > 0)
@@ -659,3 +662,4 @@ void PRS_Combine(unsigned int chA, unsigned int chB, PRS_Logic_t logic)
 
 /** @} (end addtogroup prs) */
 #endif /* defined(PRS_COUNT) && (PRS_COUNT > 0) */
+// NOLINTEND

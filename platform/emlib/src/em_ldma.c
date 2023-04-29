@@ -27,6 +27,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+// NOLINTBEGIN
+#pragma GCC diagnostic ignored "-Wsign-conversion"
 
 #include "em_ldma.h"
 
@@ -496,3 +498,4 @@ uint32_t LDMA_TransferRemainingCount(int ch)
 
 /** @} (end addtogroup ldma) */
 #endif /* defined( LDMA_PRESENT ) && ( LDMA_COUNT == 1 ) */
+// NOLINTEND
