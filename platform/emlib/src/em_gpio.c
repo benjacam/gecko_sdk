@@ -303,12 +303,16 @@ void GPIO_EM4WUExtIntConfig(GPIO_Port_TypeDef port,
                             unsigned int pin,
                             uint32_t intNo,
                             bool polarity,
-                            bool enable)
+                            bool enable,
+                            bool set_pinmode)
 {
   EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
 
   // GPIO pin mode set.
-  GPIO_PinModeSet(port, pin, gpioModeInputPullFilter, (unsigned int)!polarity);
+  if (set_pinmode)
+  {
+    GPIO_PinModeSet(port, pin, gpioModeInputPullFilter, (unsigned int)!polarity);
+  }
 
   // Enable EM4WU function and set polarity
   uint32_t polarityMask = (uint32_t)polarity << (intNo + _GPIO_EM4WUEN_EM4WUEN_SHIFT);

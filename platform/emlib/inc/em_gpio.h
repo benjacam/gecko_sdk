@@ -806,7 +806,8 @@ void GPIO_EM4WUExtIntConfig(GPIO_Port_TypeDef port,
                             unsigned int pin,
                             uint32_t intNo,
                             bool polarity,
-                            bool enable);
+                            bool enable,
+                            bool set_pinmode);
 #endif
 /***************************************************************************//**
  * @brief
